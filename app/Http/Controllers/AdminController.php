@@ -27,7 +27,7 @@
 	     */
 	    public function create()
 	    {
-	        return view('admin.create');
+	        return view('cooperative.create');
 	    }
 	    /**
 	     * Store a newly created resource in storage.

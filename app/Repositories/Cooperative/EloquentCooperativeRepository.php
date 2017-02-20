@@ -7,10 +7,25 @@ use App\Cooperative;
 class EloquentCooperativeRepository implements CooperativeContract
 {
 	public function create($request) {
-	    $cooperative = new Cooperative();
-	    $this->cooperativeProperties($cooperative, $request);
-	    $cooperative->save();
-	    return $cooperative;
+	   // $cooperative = new Cooperative();
+	   // $this->cooperativeProperties($cooperative, $request);
+	   // $cooperative->save();
+	   // return $cooperative;
+	    
+	    $userDetails = [
+            'first_name' => $request->first_name,
+            'last_name' => $request->last_name,
+            'username' => $request->username,
+            'phone_number' => $request->phone_number,
+            'email' => $request->email,
+            'password' => $request->password,
+            
+        ];
+        
+        $user = Sentinel::registerAndActivate($request->all());
+        $role = Sentinel::findRoleBySlug($request->role);
+        $role->users()->attach($user);
+        return $user;
 	}
 	
 	public function edit($request, $cooperativeId) {
