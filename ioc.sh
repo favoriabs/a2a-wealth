@@ -53,9 +53,7 @@ registerServiceProvider
 
 function writeContractBoilerPlate {
 echo "<?php
-
 namespace App\Repositories\\${repoName^};
-
 interface ${repoName^}Contract
 {
 	//
@@ -65,13 +63,10 @@ writeContractBoilerPlate
 
 function writeRepositoryBoilerPlate {
 echo "<?php
-
 namespace App\Repositories\\${repoName^};
 use App\Repositories\\${repoName^}\\${repoName^}Contract;
-
 class ${eloquent}${repoName^}Repository implements ${repoName^}Contract
 {
-
 	//
 }" > ./app/Repositories/${repoName^}/${eloquent}${repoName^}${repository}
 }
@@ -79,11 +74,8 @@ writeRepositoryBoilerPlate
 
 function bindContractToRepository {
 echo "<?php
-
 namespace App\Providers;
-
 use Illuminate\Support\ServiceProvider;
-
 class ${repoName^}${provider} extends ServiceProvider
 {
     /**
@@ -95,7 +87,6 @@ class ${repoName^}${provider} extends ServiceProvider
     {
         //
     }
-
     /**
      * Register the application services.
      *
@@ -122,21 +113,15 @@ createViews
 
 function controllerCrudFunctions {
 	echo "<?php
-
 	namespace App\Http\Controllers;
-
 	use Illuminate\Http\Request;
 	use App\Repositories\\${repoName^}\\${repoName^}Contract;
-
 	class ${repoName^}Controller extends Controller
 	{
-
 			protected \$repo;
-
-			public function __construct(${repoName^}Contract ${repoName,}Contract) {
-				\$this->\$repo = ${repoName,}Contract;
+			public function __construct(${repoName^}Contract \$${repoName,}Contract) {
+				\$this->repo = \$${repoName,}Contract;
 			}
-
 	    /**
 	     * Display a listing of the resource.
 	     *
@@ -146,7 +131,6 @@ function controllerCrudFunctions {
 	    {
 	        //
 	    }
-
 	    /**
 	     * Show the form for creating a new resource.
 	     *
@@ -156,7 +140,6 @@ function controllerCrudFunctions {
 	    {
 	        //
 	    }
-
 	    /**
 	     * Store a newly created resource in storage.
 	     *
@@ -167,7 +150,6 @@ function controllerCrudFunctions {
 	    {
 	        //
 	    }
-
 	    /**
 	     * Display the specified resource.
 	     *
@@ -178,7 +160,6 @@ function controllerCrudFunctions {
 	    {
 	        //
 	    }
-
 	    /**
 	     * Show the form for editing the specified resource.
 	     *
@@ -189,7 +170,6 @@ function controllerCrudFunctions {
 	    {
 	        //
 	    }
-
 	    /**
 	     * Update the specified resource in storage.
 	     *
@@ -201,7 +181,6 @@ function controllerCrudFunctions {
 	    {
 	        //
 	    }
-
 	    /**
 	     * Remove the specified resource from storage.
 	     *

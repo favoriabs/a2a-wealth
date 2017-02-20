@@ -13,6 +13,7 @@ return [
     */
 
     'name' => 'Laravel',
+    'key' => env('APP_KEY', 'base64:KLc6aLKhnctpnKErkdsFkLuvv94Xsqhjczp2Q6DDlDg='),
 
     /*
     |--------------------------------------------------------------------------
@@ -177,6 +178,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+ 				App\Providers\CooperativeServiceProvider::class,
  				App\Providers\CourseServiceProvider::class,
  				App\Providers\StudentServiceProvider::class,
  				App\Providers\LecturerServiceProvider::class,

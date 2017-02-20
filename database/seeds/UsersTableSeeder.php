@@ -11,51 +11,44 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        // DB::table('users')->insert([
-        //     'name' => 'Nani Admin',
-        //     'email' => 'nanipaul@gmail.com',
-        //     'password' => bcrypt('secret'),
-        // ]);
-        
-        
         $adminDetails = [
             'first_name' => 'Nani',
             'last_name' => 'admin',
             'phone_number' => '1234567890',
-            'email' => 'admin@lms.com',
+            'email' => 'admin@agric.com',
             'password' => 'secret',
             
         ];
         
         $admin = Sentinel::registerAndActivate($adminDetails, true);
-        $role = Sentinel::findRoleBySlug('admin');
+        $role = Sentinel::findRoleBySlug('superadmin');
         $role->users()->attach($admin);
         
-        $lecturerDetails = [
+        $corporativeDetails = [
             'first_name' => 'Nani',
-            'last_name' => 'Lecturer',
+            'last_name' => 'Coporative',
             'phone_number' => '1234567890',
-            'email' => 'lecturer@lms.com',
+            'email' => 'corporative@agric.com',
             'password' => 'secret',
             
         ];
         
-        $lecturer = Sentinel::registerAndActivate($lecturerDetails, true);
-        $role = Sentinel::findRoleBySlug('lecturer');
-        $role->users()->attach($lecturer);
+        $corporative = Sentinel::registerAndActivate($corporativeDetails, true);
+        $role = Sentinel::findRoleBySlug('corporative_admin');
+        $role->users()->attach($corporative);
         
-        $studentDetails = [
+        $farmerDetails = [
             'first_name' => 'Nani',
-            'last_name' => 'Student',
+            'last_name' => 'Farmer',
             'phone_number' => '1234567890',
-            'email' => 'student@lms.com',
+            'email' => 'farmer@agric.com',
             'password' => 'secret',
             
         ];
         
-        $student = Sentinel::registerAndActivate($studentDetails, true);
-        $role = Sentinel::findRoleBySlug('student');
-        $role->users()->attach($student);
+        $farmer = Sentinel::registerAndActivate($farmerDetails, true);
+        $role = Sentinel::findRoleBySlug('farmer');
+        $role->users()->attach($farmer);
         
         
     }

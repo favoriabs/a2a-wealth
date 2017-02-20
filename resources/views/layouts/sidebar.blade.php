@@ -38,76 +38,50 @@
             </div>
         </div>
     
-        @if(session('currentUserRole') == 'admin')
+        @if(session('currentUserRole') == 'superadmin')
 			<ul class="nav">
                 <li class="active">
-                    <a href="{{ route('admin_dash') }}">
+                    <a href="{{ route('superadmin_dash') }}">
                         <i class="pe-7s-graph"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
     
                 <li>
-                    <a href="{{ route('create_lecturer') }}">
+                    <a href="{{ route('create_cooperative') }}">
                         <i class="pe-7s-graph1"></i>
-                        <p>Create Lecturer</p>
+                        <p>Create Cooperative</p>
                     </a>
                 </li>
-    
-                <li>
-                    <a href="#">
-                        <i class="pe-7s-date"></i>
-                        <p>Invite</p>
-                    </a>
-                </li>
+
             </ul>
 		@endif
 		
-		@if(session('currentUserRole') == 'lecturer')
+		@if(session('currentUserRole') == 'cooperative_admin')
 			<ul class="nav">
                 <li class="active">
-                    <a href="{{ route('lecturer_dash') }}">
+                    <a href="{{ route('cooperative_admin_dash') }}">
                         <i class="pe-7s-graph"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
     
                 <li>
-                    <a href="{{ route('create_course') }}">
+                    <a href="{{ route('create_farmer') }}">
                         <i class="pe-7s-graph1"></i>
-                        <p>Create Course</p>
+                        <p>Create Farmer</p>
                     </a>
                 </li>
                 
-                <li>
-                    <a href="{{ route('register_student') }}">
-                        <i class="pe-7s-date"></i>
-                        <p>Register Student</p>
-                    </a>
-                </li>
-    
-                <li>
-                    <a href="#">
-                        <i class="pe-7s-date"></i>
-                        <p>Invite</p>
-                    </a>
-                </li>
             </ul>
 		@endif
 		
-		@if(session('currentUserRole') == 'student')
+		@if(session('currentUserRole') == 'farmer')
 			<ul class="nav">
                 <li class="active">
                     <a href="#">
                         <i class="pe-7s-graph"></i>
                         <p>Dashboard</p>
-                    </a>
-                </li>
-    
-                <li>
-                    <a href="{{ route('student_registration') }}">
-                        <i class="pe-7s-graph1"></i>
-                        <p>view Courses</p>
                     </a>
                 </li>
             </ul>

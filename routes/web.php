@@ -27,25 +27,6 @@ Route::group(['prefix' => 'admin'], function () {
     
 });
 
-Route::group(['prefix' => 'lecturer'], function () {
-    Route::get('/', 'LecturerController@index')->name('lecturer_dash');
-    Route::get('profile', 'LecturerController@edit')->name('edit_profile');
-    
-    Route::get('create-a-course', 'CourseController@create')->name('create_course');
-    Route::post('create-a-course', 'CourseController@store')->name('store_course');
-    
-    Route::get('register-student', 'StudentController@create')->name('register_student');
-    Route::post('register-student', 'StudentController@store')->name('create_student');
-    
-});
 
-Route::group(['prefix' => 'student'], function () {
-    Route::get('/', 'StudentController@index')->name('student_dash');
-    
-    Route::get('/student/activation/{email}/{activationCode}', 'StudentController@activate')->name('activate_student');
-    Route::get('/student-registration', 'StudentController@studentRegistation')->name('student_registration');
-    
-    
-});
 
 

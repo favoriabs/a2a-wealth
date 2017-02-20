@@ -38,24 +38,24 @@ class AuthController extends Controller
                 
             try {
                 
-                if (Sentinel::getUser()->inRole('admin')) {
-                    session(['currentUserRole' => 'admin']);
+                if (Sentinel::getUser()->inRole('superadmin')) {
+                    session(['currentUserRole' => 'superadmin']);
                     session(['currentUserId' => $user->id]);
                     return redirect()->route('admin_dash');
                     
                 }
                 
-                else if (Sentinel::getUser()->inRole('lecturer')) {
-                    session(['currentUserRole' => 'lecturer']);
+                else if (Sentinel::getUser()->inRole('cooperative_admin')) {
+                    session(['currentUserRole' => 'cooperative_admin']);
                     session(['currentUserId' => $user->id]);
                     // dd($user);
-                    return redirect()->route('lecturer_dash');
+                    return redirect()->route('cooperative_admin_dash');
                     // echo "hello Lect";
                 }
-                else if (Sentinel::getUser()->inRole('student')) {
-                    session(['currentUserRole' => 'student']);
+                else if (Sentinel::getUser()->inRole('farmer')) {
+                    session(['currentUserRole' => 'farmer']);
                     session(['currentUserId' => $user->id]);
-                    return redirect()->route('student_dash');
+                    return redirect()->route('farmer_dash');
                     // echo "student";
                 }
             } catch (BadMethodCallException $e) {
