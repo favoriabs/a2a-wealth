@@ -21,12 +21,17 @@ Route::post('login', 'AuthController@postLogin')->name('do_login');
 Route::get('logout', 'AuthController@logout')->name('logout');
 
 Route::group(['prefix' => 'admin'], function () {
-    Route::get('/', 'AdminController@index')->name('admin_dash');
-    Route::get('create-lecturer', 'AdminController@create')->name('create_lecturer');
+    Route::get('/', 'AdminController@index')->name('superadmin_dash');
+    Route::get('create-cooperative', 'AdminController@create')->name('create_cooperative');
     Route::post('create-lecturer', 'AdminController@store')->name('create_admin');
-    
 });
 
+Route::group(['prefix' => 'cooperative'], function () {
+    Route::get('/', 'CooperativeController@index')->name('cooperative_index');
+    Route::get('create', 'CooperativeController@create')->name('create_farmer');
+    // Route::post('create-lecturer', 'AdminController@store')->name('create_admin');
+});
 
+// Route::get('/password', 'CooperativeController@';
 
 

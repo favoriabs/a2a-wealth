@@ -48,8 +48,8 @@
                 </li>
     
                 <li>
-                    <!--<a href="{{ route('create_cooperative') }}">-->
-                    <a href="#">
+                    <a href="{{ route('create_cooperative') }}">
+                    <!--<a href="#">-->
                         <i class="pe-7s-graph1"></i>
                         <p>Create Cooperative</p>
                     </a>
@@ -61,14 +61,16 @@
 		@if(session('currentUserRole') == 'cooperative_admin')
 			<ul class="nav">
                 <li class="active">
-                    <a href="{{ route('cooperative_admin_dash') }}">
+                    <!--<a href="{{ route('cooperative_admin_dash') }}">-->
+                    <a href="#">
                         <i class="pe-7s-graph"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
     
                 <li>
-                    <a href="{{ route('create_farmer') }}">
+                    <!--<a href="{{ route('create_farmer') }}">-->
+                    <a href="#">
                         <i class="pe-7s-graph1"></i>
                         <p>Create Farmer</p>
                     </a>

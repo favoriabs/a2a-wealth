@@ -12,14 +12,14 @@ class EloquentAdminRepository implements AdminContract
         $adminDetails = [
             'first_name' => $request->first_name,
             'last_name' => $request->last_name,
-            'phone_number' => $request->phone_number,
+            // 'phone_number' => $request->phone_number,
             'email' => $request->email,
             'password' => $request->password,
             
         ];
         
         $admin = Sentinel::registerAndActivate($request->all(), true);
-        $role = Sentinel::findRoleBySlug('lecturer');
+        $role = Sentinel::findRoleBySlug('corporative_admin');
         $role->users()->attach($admin);
         return $admin;
     }
@@ -43,7 +43,7 @@ class EloquentAdminRepository implements AdminContract
         $admin->first_name = $request->first_name;
         $admin->last_name = $request->last_name;
         $admin->email = $request->email;
-        $admin->phone_number = $request->phone_number;
+        // $admin->phone_number = $request->phone_number;
         $admin->password = $request->password;
     }
 }

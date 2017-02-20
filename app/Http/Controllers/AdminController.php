@@ -42,7 +42,6 @@
             	'first_name' => 'required',
             	'last_name' => 'required',
             	'email' => 'required',
-            	'phone_number' => 'required'
         	]);
         	try {
             	$admin = $this->repo->create($request);
@@ -50,11 +49,11 @@
             	if ($admin->id) {
              
             		return redirect()->back()
-                	->with('success', 'Lecturer successfully added');
+                	->with('success', 'Cooperative successfully added');
             	} else {
                 	return back()
                     ->withInput()
-                    ->with('error', 'Could not add Lecturer. Try again!');
+                    ->with('error', 'Could not add Cooperative. Try again!');
             	}
         	
         		
