@@ -6,4 +6,5 @@ interface CooperativeContract
 	public function edit($request, $cooperativeId);
 	public function findById($cooperativeId);
 	public function findAll();
+	public function remove($cooperativeId);
 }

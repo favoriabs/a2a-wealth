@@ -31,7 +31,7 @@
                 <div class="collapse" id="collapseExample">
                     <ul class="nav">
                         <li><a href="#">My Profile</a></li>
-                        <li><a href="{{ route('edit_profile') }}">Edit Profile</a></li>
+                        <li><a href="#">Edit Profile</a></li>
                         <li><a href="#">Settings</a></li>
                     </ul>
                 </div>
@@ -48,7 +48,8 @@
                 </li>
     
                 <li>
-                    <a href="{{ route('create_cooperative') }}">
+                    <!--<a href="{{ route('create_cooperative') }}">-->
+                    <a href="#">
                         <i class="pe-7s-graph1"></i>
                         <p>Create Cooperative</p>
                     </a>

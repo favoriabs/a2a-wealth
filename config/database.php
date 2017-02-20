@@ -33,7 +33,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'mysql-heroku'),
 
     /*
     |--------------------------------------------------------------------------
@@ -60,6 +60,20 @@ return [
         ],
 
         'mysql' => [
+            'driver' => 'mysql',
+            'host' => env('DB_HOST', 'forge'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', 'forge'),
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
+        
+        'mysql-heroku' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', $host),
             'port' => env('DB_PORT', '3306'),

@@ -12,9 +12,26 @@ class EloquentCooperativeRepository implements CooperativeContract
 	    $cooperative->save();
 	    return $cooperative;
 	}
-	public function edit($request, $cooperativeId);
-	public function findById($cooperativeId);
-	public function findAll();
+	
+	public function edit($request, $cooperativeId) {
+	    $cooperative = $this->findById($cooperativeId);
+	    $this->cooperativeProperties($cooperative, $request);
+	    $cooperative->save();
+	    return $cooperative;
+	}
+	
+	public function findById($cooperativeId) {
+	    return Cooperative::find($cooperativeId);
+	}
+	
+	public function findAll() {
+	    return Cooperative::all();
+	}
+	
+	public function remove($cooperativeId) {
+	    $cooperative = $this->findById($cooperativeId);
+	    return $cooperative->delete();
+	}
 	
 	private function cooperativeProperties($cooperative, $request) {
 	    $cooperative->name = $request->name;

@@ -13,7 +13,6 @@ return [
     */
 
     'name' => 'Laravel',
-    'key' => env('APP_KEY', 'base64:KLc6aLKhnctpnKErkdsFkLuvv94Xsqhjczp2Q6DDlDg='),
 
     /*
     |--------------------------------------------------------------------------
@@ -104,7 +103,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => env('APP_KEY', 'base64:KLc6aLKhnctpnKErkdsFkLuvv94Xsqhjczp2Q6DDlDg='),
 
     'cipher' => 'AES-256-CBC',
 
