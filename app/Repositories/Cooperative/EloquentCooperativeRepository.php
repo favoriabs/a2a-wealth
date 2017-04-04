@@ -2,30 +2,44 @@
 namespace App\Repositories\Cooperative;
 
 use App\Repositories\Cooperative\CooperativeContract;
+use App\Repositories\Sms\SmsContract;
 use App\Cooperative; 
+use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
+use Illuminate\Support\Facades\Log;
+use DB;
+
 
 class EloquentCooperativeRepository implements CooperativeContract
 {
+	protected $smsRepo;
+	public function __construct(SmsContract $smsContract){
+		$this->smsRepo = $smsContract;
+	}
 	public function create($request) {
-	   // $cooperative = new Cooperative();
-	   // $this->cooperativeProperties($cooperative, $request);
-	   // $cooperative->save();
-	   // return $cooperative;
-	    
-	    $userDetails = [
+		
+		$user = Sentinel::getUser();
+		$password = rand(10000, 99999);
+		Log::info($password);
+	    $farmerDetails = [
             'first_name' => $request->first_name,
             'last_name' => $request->last_name,
-            'username' => $request->username,
             'phone_number' => $request->phone_number,
             'email' => $request->email,
-            'password' => $request->password,
+            'user_name' => $request->user_name,
+            'password' => $password,
+            'cooperative_id' => $user->id,
             
         ];
         
-        $user = Sentinel::registerAndActivate($request->all());
-        $role = Sentinel::findRoleBySlug($request->role);
-        $role->users()->attach($user);
-        return $user;
+        
+        $farmer = Sentinel::registerAndActivate($farmerDetails, true);
+        $role = Sentinel::findRoleBySlug('farmer');
+        $role->users()->attach($farmer);
+        
+        //send sms
+        // $sms = $this->smsRepo->sendSms($farmer, $password);
+        
+        return $farmer;
 	}
 	
 	public function edit($request, $cooperativeId) {
@@ -48,45 +62,10 @@ class EloquentCooperativeRepository implements CooperativeContract
 	    return $cooperative->delete();
 	}
 	
-	private function cooperativeProperties($cooperative, $request) {
-	    $cooperative->name = $request->name;
-	    $cooperative->username = ;
-	    $cooperative->password = ;
-	}
-	
-// 	private function generateStrongPassword($length = 9, $add_dashes = false, $available_sets = 'luds')
-//     {
-//     	$sets = array();
-//     	if(strpos($available_sets, 'l') !== false)
-//     		$sets[] = 'abcdefghjkmnpqrstuvwxyz';
-//     	if(strpos($available_sets, 'u') !== false)
-//     		$sets[] = 'ABCDEFGHJKMNPQRSTUVWXYZ';
-//     	if(strpos($available_sets, 'd') !== false)
-//     		$sets[] = '23456789';
-//     	if(strpos($available_sets, 's') !== false)
-//     		$sets[] = '!@#$%&*?';
-//     	$all = '';
-//     	$password = '';
-//     	foreach($sets as $set)
-//     	{
-//     		$password .= $set[array_rand(str_split($set))];
-//     		$all .= $set;
-//     	}
-//     	$all = str_split($all);
-//     	for($i = 0; $i < $length - count($sets); $i++)
-//     		$password .= $all[array_rand($all)];
-//     	$password = str_shuffle($password);
-//     	if(!$add_dashes)
-//     		return $password;
-//     	$dash_len = floor(sqrt($length));
-//     	$dash_str = '';
-//     	while(strlen($password) > $dash_len)
-//     	{
-//     		$dash_str .= substr($password, 0, $dash_len) . '-';
-//     		$password = substr($password, $dash_len);
-//     	}
-//     	$dash_str .= $password;
-//     	return $dash_str;
-//     	dd($dash_str);
-//     }
+	public function findFarmers(){
+		$cooperative = Sentinel::getUser();
+		$users = DB::table('users')->where('cooperative_id', $cooperative->id)->get();
+		return $users;
+	}	
+
 }

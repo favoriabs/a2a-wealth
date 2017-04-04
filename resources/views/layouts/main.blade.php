@@ -5,7 +5,7 @@
 	<link rel="icon" type="image/png" href="../../assets/img/favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Light Bootstrap Dashboard PRO by Creative Tim</title>
+	<title>A2A Wealth</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -23,7 +23,11 @@
     <!--     Fonts and icons     -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-    <link href="/assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <!--<link href="/assets/css/pe-icon-7-stroke.css" rel="stylesheet" />-->
+    <link href="//cdn.bootcss.com/pixeden-stroke-7-icon/1.2.3/dist/pe-icon-7-stroke.css" rel="stylesheet">
+     <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -32,7 +36,7 @@
         @include('layouts.sidebar')
     
         <div class="main-panel">
-            @include('layouts.navbar')
+            @yield('navbar')
             
             <div class="content">
                 @yield('content')
@@ -93,12 +97,13 @@
 
     <!-- Light Bootstrap Dashboard Core javascript and methods -->
 	<script src="/assets/js/light-bootstrap-dashboard.js"></script>
-
+    <script src="/js/app.js"></script>
 	<!--   Sharrre Library    -->
     <script src="/assets/js/jquery.sharrre.js"></script>
+    <script src="/assets/webcam/webcam.min.js" type="text/javascript"></script>
+    <script src="/assets/webcam/webcam.swf" type="text/javascript"></script>
 
-	<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
-	<script src="/assets/js/demo.js"></script>
+    
 	
 	@yield('script')
 

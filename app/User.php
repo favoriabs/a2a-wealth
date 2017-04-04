@@ -15,7 +15,7 @@ class User extends \Cartalyst\Sentinel\Users\EloquentUser
      * @var array
      */
     protected $fillable = [
-        'email', 'password',
+        'email', 'password', 'user_name', 'first_name', 'last_name', 'phone_number', 'agent_id',
     ];
 
     /**
@@ -24,6 +24,10 @@ class User extends \Cartalyst\Sentinel\Users\EloquentUser
      * @var array
      */
     protected $loginNames = [
-        'email',
+        'email', 'user_name'
     ];
+    
+    public function products(){
+        return $this->hasMany('App\Product');
+    }
 }

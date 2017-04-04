@@ -15,6 +15,9 @@ class CreateCooperativesTable extends Migration
     {
         Schema::create('cooperatives', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('state');
+            $table->string('lga');
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

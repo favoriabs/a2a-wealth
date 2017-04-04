@@ -17,8 +17,18 @@ class RolesTableSeeder extends Seeder
         ]);
         
         DB::table('roles')->insert([
-            'slug' => 'corporative_admin',
-            'name' => 'Corporative Admin',
+            'slug' => 'cooperative_admin',
+            'name' => 'Cooperative Admin',
+        ]);
+        
+        DB::table('roles')->insert([
+            'slug' => 'company_admin',
+            'name' => 'Company Admin',
+        ]);
+        
+        DB::table('roles')->insert([
+            'slug' => 'agent_admin',
+            'name' => 'Agent Admin',
         ]);
         
         DB::table('roles')->insert([

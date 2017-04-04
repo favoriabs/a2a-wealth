@@ -1,4 +1,4 @@
-<div class="sidebar" data-color="orange" data-image="assets/img/full-screen-image-3.jpg">
+<div class="sidebar" data-color="dark-green" data-image="assets/img/full-screen-image-3.jpg">
         
     <!--
 
@@ -8,12 +8,12 @@
     -->
     
     <div class="logo">
-        <a href="http://www.creative-tim.com" class="logo-text">
-            Creative Tim
+        <a href="#" class="logo-text">
+            A2A WEALTH
         </a>
     </div>
 	<div class="logo logo-mini">
-		<a href="http://www.creative-tim.com" class="logo-text">
+		<a href="#" class="logo-text">
 			Ct
 		</a>
 	</div>
@@ -21,18 +21,24 @@
 	<div class="sidebar-wrapper">
         <div class="user">
             <div class="photo">
-                <img src="../assets/img/default-avatar.png" />
+                <img src="../assets/img/A2A.png" />
             </div>
             <div class="info">
                 <a data-toggle="collapse" href="#collapseExample" class="collapsed">
-                    {{ session('currentUser')->first_name }} {{ session('currentUser')->last_name }}
+                    @if(session('currentUser') == null)
+                        <script>
+                            window.location.href = '{{route("logout")}}'; //using a named route
+                        </script>
+                    @else
+                        {{ session('currentUser')->first_name }} {{ session('currentUser')->last_name }}
+                    @endif
                     <b class="caret"></b>
                 </a>
                 <div class="collapse" id="collapseExample">
                     <ul class="nav">
                         <li><a href="#">My Profile</a></li>
                         <li><a href="#">Edit Profile</a></li>
-                        <li><a href="#">Settings</a></li>
+                        <li><a href="{{route('settings')}}">Settings</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,16 +48,21 @@
 			<ul class="nav">
                 <li class="active">
                     <a href="{{ route('superadmin_dash') }}">
-                        <i class="pe-7s-graph"></i>
+                        <i class="pe-7s-browser"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
-    
                 <li>
-                    <a href="{{ route('create_cooperative') }}">
-                    <!--<a href="#">-->
-                        <i class="pe-7s-graph1"></i>
-                        <p>Create Cooperative</p>
+                    <a href="{{ route('create_company') }}">
+                        <i class="pe-7s-id"></i>
+                        <p>Create Company</p>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="{{ route('create_agent') }}">
+                        <i class="pe-7s-folder"></i>
+                        <p>Create Agent</p>
                     </a>
                 </li>
 
@@ -61,17 +72,15 @@
 		@if(session('currentUserRole') == 'cooperative_admin')
 			<ul class="nav">
                 <li class="active">
-                    <!--<a href="{{ route('cooperative_admin_dash') }}">-->
-                    <a href="#">
-                        <i class="pe-7s-graph"></i>
+                    <a href="{{ route('cooperative_index') }}">
+                        <i class="pe-7s-browser"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
     
                 <li>
-                    <!--<a href="{{ route('create_farmer') }}">-->
-                    <a href="#">
-                        <i class="pe-7s-graph1"></i>
+                    <a href="{{ route('create_farmer') }}">
+                        <i class="pe-7s-users"></i>
                         <p>Create Farmer</p>
                     </a>
                 </li>
@@ -81,10 +90,53 @@
 		
 		@if(session('currentUserRole') == 'farmer')
 			<ul class="nav">
-                <li class="active">
-                    <a href="#">
+			    <li>
+                    <a href="{{ route('farmer_registration') }}">
+                        <i class="pe-7s-notebook"></i>
+                        <p>Farmer Registration</p>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="{{ route('create_product') }}">
                         <i class="pe-7s-graph"></i>
+                        <p>Add Products</p>
+                    </a>
+                </li>
+            </ul>
+		@endif
+		
+		@if(session('currentUserRole') == 'company')
+			<ul class="nav">
+			    <li>
+                    <a href="{{ route('farmer_registration') }}">
+                        <i class="pe-7s-notebook"></i>
                         <p>Dashboard</p>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="{{ route('register_company') }}">
+                        <i class="pe-7s-graph"></i>
+                        <p>Register Company</p>
+                    </a>
+                </li>
+            </ul>
+		@endif
+		
+		@if(session('currentUserRole') == 'agent_admin')
+			<ul class="nav">
+			    <li>
+                    <a href="#">
+                        <i class="pe-7s-notebook"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="{{ route('create_farmer') }}">
+                        <i class="pe-7s-graph"></i>
+                        <p>Register Farmer</p>
                     </a>
                 </li>
             </ul>

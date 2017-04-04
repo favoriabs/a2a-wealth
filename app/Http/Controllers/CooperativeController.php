@@ -19,8 +19,8 @@ class CooperativeController extends Controller
      */
     public function index()
     {
-    	// $co
-        // return view
+    	$farmers = $this->repo->findFarmers();
+        return view('cooperative.index')->with('farmers', $farmers);
     }
     
     /**
@@ -30,7 +30,7 @@ class CooperativeController extends Controller
      */
     public function create()
     {
-        //
+        return view('farmer.create');
     }
     
     /**
@@ -41,7 +41,25 @@ class CooperativeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+    	// dd($request->all());
+        $this->validate($request, [
+        	'first_name' => 'required',
+        	'last_name' => 'required',
+        	'email' => 'required',
+        	'phone_number' => 'required',
+        	'user_name' => 'required',
+    	]);
+
+    	$farmer = $this->repo->create($request);
+		if ($farmer->id) {
+			return redirect()->back()
+				->with('success', 'Farmer successfully Created');
+		} else {
+			return back()
+				->withInput()
+				->with('error', 'Could not add Farmer. Try again!');
+		}
+		
     }
     /**
      * Display the specified resource.

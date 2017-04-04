@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Form</title>
+        <title>A2A</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" type="text/css" />
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
         <style type="text/css">
             /*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);*/
 
             body {
-              background: #456;
+              background: #F1ECEB;
               font-family: 'Open Sans', sans-serif;
             }
             
@@ -30,17 +31,17 @@
               margin-right: auto;
               margin-left: auto;
               border: 12px solid transparent;
-              border-bottom-color: #28d;
+              border-bottom-color: #F1ECEB;
             }
 
             .login-header {
-              background: #28d;
+              background: #F1ECEB;
               padding: 20px;
               font-size: 1.4em;
-              font-weight: normal;
+              font-weight: bold;
               text-align: center;
               text-transform: uppercase;
-              color: #fff;
+              color: #000;
             }
             
             .login-container {
@@ -79,32 +80,35 @@
             }
             
             .login input[type="submit"] {
-              background: #28d;
+              background: #D2AE6D;
               border-color: transparent;
               color: #fff;
               cursor: pointer;
             }
             
             .login input[type="submit"]:hover {
-              background: #17c;
+              background: #373435;
             }
             
             /* Buttons' focus effect */
             .login input[type="submit"]:focus {
-              border-color: #05a;
+              border-color: #373435;
             }
         </style>
     </head>
     <body>
         <div class="login">
+            <p style="text-align:center;">
+              <img src="../assets/img/A2A1.png" width="200px" height="200px" />
+            </p>
             <div class="login-triangle"></div>
-          
             <h2 class="login-header">Log in</h2>
-        
+            
             <form action="{{ route('do_login') }}" method="post" class="login-container">
                 {{ csrf_field() }}
-                
-                <p><input type="email" name="email" placeholder="Email"></p>
+                 @include('layouts.sessions')
+                  @include('layouts.errors')
+                <p><input type="text" name="username" placeholder="Email"></p>
                 <p><input type="password" name="password" placeholder="Password"></p>
                 <p><input type="submit" value="Log in"></p>
             </form>

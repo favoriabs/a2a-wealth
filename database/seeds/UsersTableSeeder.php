@@ -12,11 +12,12 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         $adminDetails = [
-            'first_name' => 'Nani',
+            'first_name' => 'Super',
             'last_name' => 'admin',
             'phone_number' => '1234567890',
             'email' => 'admin@agric.com',
             'password' => 'secret',
+            'user_name' => 'admin',
             
         ];
         
@@ -24,25 +25,56 @@ class UsersTableSeeder extends Seeder
         $role = Sentinel::findRoleBySlug('superadmin');
         $role->users()->attach($admin);
         
-        $corporativeDetails = [
-            'first_name' => 'Nani',
-            'last_name' => 'Coporative',
+        $cooperativeDetails = [
+            'first_name' => 'Admin',
+            'last_name' => 'Cooperative',
             'phone_number' => '1234567890',
-            'email' => 'corporative@agric.com',
+            'email' => 'cooperative@agric.com',
             'password' => 'secret',
+            'user_name' => 'cooperative',
             
         ];
         
-        $corporative = Sentinel::registerAndActivate($corporativeDetails, true);
-        $role = Sentinel::findRoleBySlug('corporative_admin');
-        $role->users()->attach($corporative);
+        $cooperative = Sentinel::registerAndActivate($cooperativeDetails, true);
+        $role = Sentinel::findRoleBySlug('cooperative_admin');
+        $role->users()->attach($cooperative);
+        
+        $companyDetails = [
+            'first_name' => 'Admin',
+            'last_name' => 'Company',
+            'phone_number' => '1234567890',
+            'email' => 'company@agric.com',
+            'password' => 'secret',
+            'user_name' => 'company',
+            
+        ];
+        
+        $company = Sentinel::registerAndActivate($companyDetails, true);
+        $role = Sentinel::findRoleBySlug('company_admin');
+        $role->users()->attach($company);
+        
+        $agentDetails = [
+            'first_name' => 'Admin',
+            'last_name' => 'Agent',
+            'phone_number' => '1234567890',
+            'email' => 'agent@agric.com',
+            'password' => 'secret',
+            'user_name' => 'agent',
+            
+        ];
+        
+        $agent = Sentinel::registerAndActivate($agentDetails, true);
+        $role = Sentinel::findRoleBySlug('agent_admin');
+        $role->users()->attach($agent);
         
         $farmerDetails = [
-            'first_name' => 'Nani',
+            'first_name' => 'Farmer',
             'last_name' => 'Farmer',
             'phone_number' => '1234567890',
             'email' => 'farmer@agric.com',
             'password' => 'secret',
+            'user_name' => 'farmer',
+            'agent_id' => 1,
             
         ];
         

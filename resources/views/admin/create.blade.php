@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
+@section('navbar')
+    @include('admin.navbar')
+@stop
+
 @section('content')
 
     <div class="container-fluid">
