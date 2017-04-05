@@ -28,7 +28,7 @@ class EloquentProductRepository implements ProductContract
         return $products->delete();
     }
     
-    private function setProductProperties($product, $request){
+    private function setProductProperties($request, $product){
         $product->product_name = $request->product_name;
         $product->variety = $request->variety;
         $product->quantity = $request->quantity;
@@ -37,6 +37,12 @@ class EloquentProductRepository implements ProductContract
         $product->price = $request->price;
         $product->fertilization = $request->fertilization;
         $product->production = $request->production;
+        
+        $destination = 'uploads/products';
+        $extension = $request->file('product_pix_path')->getClientOriginalExtension();
+        $fileName = rand(1111111, 9999999).'.'.$extension;
+        $request->file('product_pix_path')->move($destination, $fileName);
+        $product->product_pix_path = '/'.$destination.'/'.$fileName;
         $user = Sentinel::getUser();
 
         $product->farmer_id = $user->id;

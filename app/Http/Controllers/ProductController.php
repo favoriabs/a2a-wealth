@@ -20,10 +20,10 @@ class ProductController extends Controller
         $this->validate($request, [
             'product_name' => 'required',
             'variety' => 'required',
-            'quantity' => 'required',
+            'quantity' => 'required|numeric',
             'quality' => 'required',
             'shelf_life' => 'required',
-            'price' => 'required',
+            'price' => 'required|numeric',
             'fertilization' => 'required',
             'production' => 'required',
         ]);

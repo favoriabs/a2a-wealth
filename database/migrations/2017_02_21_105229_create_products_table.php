@@ -24,9 +24,10 @@ class CreateProductsTable extends Migration
             $table->float('price');
             $table->string('fertilization');
             $table->string('production');
+            $table->string('product_pix_path');
 
             $table->integer('farmer_id')->unsigned();
-            $table->foreign('farmer_id')->references('id')->on('farmers');
+            $table->foreign('farmer_id')->references('id')->on('users');
             
             $table->timestamps();
         });

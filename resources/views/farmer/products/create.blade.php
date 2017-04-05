@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="card">
-                    <form id="loginFormValidation" action="{{ route('store_product') }}" method="post">
+                    {{Form::open(array('route' => 'store_product', 'method' => 'POST', 'files' => 'true'))}}    
                         {{ csrf_field() }}
                         <div class="header text-center">Create Product</div>
                         <div class="content">
@@ -74,6 +74,14 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label"> Image of the Product(very clear picture)</label> <br/>
+                                        <input type="file" name="product_pix_path" accept="image/*" value="{{old('product_pix_path')}}">
+                                    </div>
+                                </div>
+                            </div>
                             <br/> <br/>
                             
 
@@ -83,9 +91,10 @@
                     </div>
                     </form>
             </div>
-            @include('layouts.sessions')
-            @include('layouts.errors')
+            
         </div>
+        @include('layouts.sessions')
+        @include('layouts.errors')
     </div>
   </div>  
 @stop

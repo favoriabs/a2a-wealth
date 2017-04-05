@@ -320,7 +320,7 @@
 
 				<!-- breadcrumbs -->
 				<ol class="breadcrumb">
-					<li><a href="index.html">Home</a></li>
+					<li><a href="/">Home</a></li>
 					<li class="active">Products</li>
 				</ol><!-- /breadcrumbs -->
 
@@ -351,19 +351,20 @@
 				</div>
 				<!-- /LIST OPTIONS -->
 
-
+				@if($products->count() < 1)
+					<h3>There are no products availabe now</h3>
+				@else
 				<ul class="shop-item-list row list-inline nomargin">
-
-					<!-- ITEM -->
+				@foreach($products->reverse() as $product)
 					<li class="col-lg-3 col-sm-3">
 
 						<div class="shop-item">
 
 							<div class="thumbnail">
 								<!-- product image(s) -->
-								<a class="shop-item-image" href="product_view.html">
-									<img class="img-responsive" src="assets2/images/maize%20(1).jpg" alt="shop first image" />
-									<img class="img-responsive" src="assets2/images/maize.jpg" alt="shop hover image" />
+								<a class="shop-item-image" href="#">
+									<img class="img-responsive" src="{{$product->product_pix_path}}" alt="shop first image" />
+									<!--<img class="img-responsive" src="assets2/images/maize.jpg" alt="shop hover image" />-->
 								</a>
 								<!-- /product image(s) -->
 
@@ -376,9 +377,12 @@
 							</div>
 
 							<div class="shop-item-summary text-center">
-								<h2>Yellow Maize</h2>
-								<h2>Nyambees Company Plc </h2>
-
+								<h2>{{$product->product_name}}</h2>
+								@foreach($users as $user)
+									@if($product->farmer_id == $user->id)
+										<h2>{{$user->first_name}} {{$user->last_name}} </h2>
+									@endif
+								@endforeach
 								<!-- rating -->
 								<div class="shop-item-rating-line">
 									<div class="rating rating-4 size-13"><!-- rating-0 ... rating-5 --></div>
@@ -388,23 +392,22 @@
 								<!-- price -->
 								<div class="shop-item-price">
 									<span class="line-through">N8,000.00</span>
-									N4,000.00
+									N{{$product->price}}
 								</div>
 								<!-- /price -->
 							</div>
 
 							<!-- buttons -->
-							<div class="shop-item-buttons text-center">
-								<a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
-							</div>
+							<!--<div class="shop-item-buttons text-center">-->
+							<!--	<a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>-->
+							<!--</div>-->
 							<!-- /buttons -->
 						</div>
 
 					</li>
-					<!-- /ITEM -->
-
+				@endforeach
 				</ul>
-
+				@endif
 				<hr />
 
 				<!-- Pagination Default -->
