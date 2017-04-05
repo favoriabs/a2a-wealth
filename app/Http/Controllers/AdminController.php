@@ -207,4 +207,10 @@ class AdminController extends Controller
 	    					->with('error', 'Could not delete this agent. Try again');
 	    	}
 	    }
+	    
+	    public function allFarmers(){
+	    	$users = DB::table('users')->get();
+	    	$farmers = DB::table('users')->where('agent_id', '!=', 'NULL')->get();
+	    	return view('admin.all_farmers')->with('farmers', $farmers)->with('users', $users);
+	    }
 	}

@@ -28,6 +28,16 @@
 				</li>
 		
 			</ul>
+			
+			<ul class="nav navbar-nav navbar-left">
+				<li>
+					<a href="{{route('all_farmers')}}">
+						<i class="pe-7s-plus"></i>
+						<p>All Farmers</p>
+					</a>
+				</li>
+		
+			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown dropdown-with-icons">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
