@@ -65,6 +65,7 @@ class EloquentAdminRepository implements AdminContract
         $role->users()->attach($agent);
         
         // $sms = $this->smsRepo->sendSms($agent, $password);
+        $sms = $this->smsRepo->send($agent->user_name, $agent->phone_number, $password);
         return $agent;
     }
     
@@ -85,6 +86,7 @@ class EloquentAdminRepository implements AdminContract
         $role->users()->attach($company);
         
         // $sms = $this->smsRepo->sendSms($company, $password);
+        $sms = $this->smsRepo->send($company->user_name, $company->phone_number, $password);
         return $company;
     }
     
