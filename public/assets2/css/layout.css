@@ -2531,6 +2531,7 @@ section.dark.page-header ul.page-options a {
 	}
 	#topNav .nav-pills>li+li {
 		margin-left:0;
+    background: #226117;
 	}
 
 	/* search */

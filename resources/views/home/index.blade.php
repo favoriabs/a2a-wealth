@@ -122,7 +122,7 @@
 				<!--<li><a tabindex="-1" href="#"><i class="glyphicon glyphicon-off"></i> LOGOUT</a></li>-->
 				<!--</ul>-->
 				<!--</li>-->
-				<li class="hidden-xs"><a style="color: white!important;" href="{{route('login')}}">LOGIN</a></li>
+				<li><a style="color: white!important;" href="{{route('login')}}">LOGIN</a></li>
 			</ul>
 
 		</div>
