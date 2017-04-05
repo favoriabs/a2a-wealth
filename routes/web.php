@@ -42,6 +42,9 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web']], function () {
     //companies
     Route::post('edit/company/{id}', 'AdminController@editCompany')->name('company_update_admin');
     Route::get('delete/company/{id}', 'AdminController@deleteCompany')->name('company_delete_admin');
+    
+    //farmers
+    Route::get('all/farmers', 'AdminController@allFarmers')->name('all_farmers');
 });
 
 Route::post('ajax/state/lgas', 'AdminController@ajaxCall')->name('state_lga');
