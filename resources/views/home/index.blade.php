@@ -540,7 +540,7 @@
 									<img class="rounded" src="assets2/images/photo.jpg" alt="" />
 								</figure>
 								<div class="testimonial-content nopadding">
-									<p>Can you Believe it, that guys left eye looks just like his right eye.</p>
+									<p>A2A has been of great help to me.</p>
 									<cite>
 										ABG
 										<span>Company Ltd.</span>
@@ -553,7 +553,7 @@
 									<img class="rounded" src="assets2/images/buhari.jpg" alt="" />
 								</figure>
 								<div class="testimonial-content nopadding">
-									<p>Kai Wakan Arisen Wenger mai Dadi Ne.</p>
+									<p>A2A has been of great help to me.</p>
 									<cite>
 										Badmus
 										<span>Company Ltd.</span>
