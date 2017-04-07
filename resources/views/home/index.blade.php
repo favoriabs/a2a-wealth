@@ -48,6 +48,12 @@
 		.caption-slider-default{
 			background-color: rgba(0, 0, 0, 0.28)
 		}
+		.pricing-title{
+			    height: 75px!important;
+		}
+		.list-unstyled {
+    font-size: 13px!important;
+        }
 		/*a.dropdown-toggle{*/
 		/*color: gold!important;*/
 		/*}*/
@@ -388,7 +394,7 @@
 
 						<div class="blog-item-small-content">
 
-							<h2><a href="blog-single-default.html">CBN approves N75billion loan for agricultural lending to A2AW members</a></h2>
+							<h2><a href="blog-single-default.html">CBN Offers 2.1 Billion Naira Only To AFAN Plateau State</a></h2>
 
 							<ul class="blog-post-info list-inline">
 								<li>
