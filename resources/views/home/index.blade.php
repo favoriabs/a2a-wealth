@@ -394,7 +394,7 @@
 
 						<div class="blog-item-small-content">
 
-							<h2><a href="blog-single-default.html">CBN Offers 2.1 Billion Naira Only To AFAN Plateau State</a></h2>
+							<h2><a href="#">CBN Offers 2.1 Billion Naira Only To AFAN Plateau State</a></h2>
 
 							<ul class="blog-post-info list-inline">
 								<li>
@@ -413,12 +413,12 @@
 
 							<p>All Farmers Association of Nigeria (AFAN), Offers to it's registered members, through A2A Wealth Oppurtunity to access Anchor Borrowers Loan, At one Digit Unit Interest under The Afan,Plateau State Chapter - FCMB - Grand Cereals Private Sector Partnership Arrangement. ...</p>
 
-							<a href="blog-single-default.html" class="btn btn-reveal btn-default">
+							<a href="#" class="btn btn-reveal btn-default">
 								<i class="fa fa-plus"></i>
 								<span>Read More</span>
 							</a>
 
-							<a href="blog-single-default.html" class="btn btn-reveal btn-default">
+							<a href="#" class="btn btn-reveal btn-default">
 								<i class="fa fa-cub"></i>
 								<span>See All</span>
 							</a>
@@ -434,7 +434,7 @@
 
 						<div class="blog-item-small-content">
 
-							<h2><a href="blog-single-default.html">Organic Crop Production</a></h2>
+							<h2><a href="#">Organic Crop Production</a></h2>
 
 							<ul class="blog-post-info list-inline">
 								<li>
@@ -453,12 +453,12 @@
 
 							<p>A2A Wealth secures funding for black/white Sesame and sweet potato organic production for the 201 cropping season ...</p>
 
-							<a href="blog-single-default.html" class="btn btn-reveal btn-default">
+							<a href="#" class="btn btn-reveal btn-default">
 								<i class="fa fa-plus"></i>
 								<span>Read More</span>
 							</a>
 
-							<a href="blog-single-default.html" class="btn btn-reveal btn-default">
+							<a href="#" class="btn btn-reveal btn-default">
 								<i class="fa fa-cub"></i>
 								<span>See All</span>
 							</a>
@@ -717,8 +717,8 @@
 
 					<!-- HTML BLOCK -->
 					<div class="margin-bottom-60">
-						<h4>HTML BLOCK</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non placerat mi. Etiam non tellus eunit.</p>
+						<h4>SUBSCRIBE</h4>
+						<p>Interested in our articles, subscribe here</p>
 
 						<form action="#" role="form" method="post">
 							<div class="input-group">
@@ -742,7 +742,7 @@
 						<img class="img-responsive" src="assets2/images/Jute-Plant.jpg" alt="">
 					</a>
 
-					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Depad Integrated Ventures</a></h4>
+					<h4 class="text-left margin-top-20"><a href="#">Depad Integrated Ventures</a></h4>
 					<p class="text-left">Known Well for their tall rich rooted plants. Located in Lamingo LGA of Plateau State.</p>
 					<ul class="text-left size-12 list-inline list-separator">
 						<li>
@@ -750,7 +750,7 @@
 							29th Jan 2015
 						</li>
 						<li>
-							<a href="blog-single-default.html#comments">
+							<a href="#">
 								<i class="fa fa-comments"></i>
 								3
 							</a>
@@ -758,11 +758,11 @@
 					</ul>
 				</div>
 				<div class="img-hover">
-					<a href="blog-single-default.html">
+					<a href="#">
 						<img class="img-responsive" src="assets2/images/white_turkeys.jpg" alt="">
 					</a>
 
-					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Michael Poultry Farms</a></h4>
+					<h4 class="text-left margin-top-20"><a href="#">Michael Poultry Farms</a></h4>
 					<p class="text-left">Located in Vom Area Of Plateau State. Known for their large Turky Poultry</p>
 					<ul class="text-left size-12 list-inline list-separator">
 						<li>
@@ -770,7 +770,7 @@
 							29th Jan 2015
 						</li>
 						<li>
-							<a href="blog-single-default.html#comments">
+							<a href="#">
 								<i class="fa fa-comments"></i>
 								3
 							</a>
@@ -778,11 +778,11 @@
 					</ul>
 				</div>
 				<div class="img-hover">
-					<a href="blog-single-default.html">
+					<a href="#">
 						<img class="img-responsive" src="assets2/images/Onions-Farming.jpg" alt="">
 					</a>
 
-					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Nyambees Company Plc</a></h4>
+					<h4 class="text-left margin-top-20"><a href="#">Nyambees Company Plc</a></h4>
 					<p class="text-left">Known not just for their maize production but also for their recent addition of onions to their production quota.</p>
 					<ul class="text-left size-12 list-inline list-separator">
 						<li>
@@ -790,7 +790,7 @@
 							29th Jan 2015
 						</li>
 						<li>
-							<a href="blog-single-default.html#comments">
+							<a href="#">
 								<i class="fa fa-comments"></i>
 								3
 							</a>
@@ -798,11 +798,11 @@
 					</ul>
 				</div>
 				<div class="img-hover">
-					<a href="blog-single-default.html">
+					<a href="#">
 						<img class="img-responsive" src="assets2/images/mushroom-farming.jpg" alt="">
 					</a>
 
-					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Asixo Model Farm</a></h4>
+					<h4 class="text-left margin-top-20"><a href="#">Asixo Model Farm</a></h4>
 					<p class="text-left">A Beautiful farm located in Rukuba Area of Plateau State, Known mostly for their awesome Mushrooms of various kinds.</p>
 					<ul class="text-left size-12 list-inline list-separator">
 						<li>
@@ -810,7 +810,7 @@
 							29th Jan 2015
 						</li>
 						<li>
-							<a href="blog-single-default.html#comments">
+							<a href="#">
 								<i class="fa fa-comments"></i>
 								3
 							</a>
@@ -818,10 +818,10 @@
 					</ul>
 				</div>
 				<div class="img-hover">
-					<a href="blog-single-default.html">
+					<a href="#">
 						<img class="img-responsive" src="assets2/images/fishfarm-big-1728x800_c.jpg" alt="">
 					</a>
-					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Ambi Quail Eggs</a></h4>
+					<h4 class="text-left margin-top-20"><a href="#">Ambi Quail Eggs</a></h4>
 					<p class="text-left">Locatedd in Bassa LGA, Plateau State. Jnown now for more than their eggs but also for their fish farm which is becoming well favoured in the area.</p>
 					<ul class="text-left size-12 list-inline list-separator">
 						<li>
@@ -829,7 +829,7 @@
 							29th Jan 2015
 						</li>
 						<li>
-							<a href="blog-single-default.html#comments">
+							<a href="#">
 								<i class="fa fa-comments"></i>
 								3
 							</a>
@@ -837,7 +837,7 @@
 					</ul>
 				</div>
 				<div class="img-hover">
-					<a href="blog-single-default.html">
+					<a href="#">
 						<img class="img-responsive" src="assets2/images/banner-bg.jpg" alt="">
 					</a>
 					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">1st Digital Farms</a></h4>
@@ -848,7 +848,7 @@
 							29th Jan 2015
 						</li>
 						<li>
-							<a href="blog-single-default.html#comments">
+							<a href="#">
 								<i class="fa fa-comments"></i>
 								3
 							</a>
@@ -856,7 +856,7 @@
 					</ul>
 				</div>
 				<div class="img-hover">
-					<a href="blog-single-default.html">
+					<a href="#">
 						<img class="img-responsive" src="assets2/images/Pineapple_Farming.jpg" alt="">
 					</a>
 					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">K.I. Holdings Nigeria Limited</a></h4>
@@ -867,7 +867,7 @@
 							29th Jan 2015
 						</li>
 						<li>
-							<a href="blog-single-default.html#comments">
+							<a href="#">
 								<i class="fa fa-comments"></i>
 								3
 							</a>
@@ -875,10 +875,10 @@
 					</ul>
 				</div>
 				<div class="img-hover">
-					<a href="blog-single-default.html">
+					<a href="#">
 						<img class="img-responsive" src="assets2/images/maize.jpg" alt="">
 					</a>
-					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Nyambees Company Plc</a></h4>
+					<h4 class="text-left margin-top-20"><a href="#">Nyambees Company Plc</a></h4>
 					<p class="text-left">Located in Foron District of the barkin ladi LGA of Plateau State.</p>
 					<ul class="text-left size-12 list-inline list-separator">
 						<li>
@@ -886,7 +886,7 @@
 							29th Jan 2017
 						</li>
 						<li>
-							<a href="blog-single-default.html#comments">
+							<a href="#">
 								<i class="fa fa-comments"></i>
 								3
 							</a>
