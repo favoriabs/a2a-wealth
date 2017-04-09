@@ -60,7 +60,7 @@ class CreateFarmersTable extends Migration
             $table->string('mode_of_transporation')->nullable();
             $table->string('equipment')->nullable();
             $table->string('area_of_operation')->nullable();
-            $this->string('fertilization')->nullable();
+            $table->string('fertilization')->nullable();
             //cooperative info
             $table->string('cooperative_name')->nullable();
             $table->string('status')->nullable();
