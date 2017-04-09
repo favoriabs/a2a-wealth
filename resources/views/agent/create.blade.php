@@ -4,6 +4,10 @@
     @include('admin.navbar')
 @stop
 
+@section('create_agent_active')
+    active
+@stop
+
 @section('content')
 
     <div class="container-fluid">

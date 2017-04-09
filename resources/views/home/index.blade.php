@@ -348,10 +348,10 @@
 								<div class="display-table">
 									<div class="display-table-cell vertical-align-middle">
 										<div class="caption-container text-left">
-											<h2 style="color:gold!important">SHOP <strong>NOW</strong> &ndash; 50% OFF</h2>
+											<h2 style="color:gold!important"><strong><a href="#" style="color:gold!important">K.I. Holdings Nigeria Limited</a></strong> &ndash; DadinKowa</h2>
 											<h4 style="color:gold!important">
-												This is a category banner rotator<br />
-												for any category of your shop.
+												Awesome Pineapples <br />
+												Will Have You Looking no whee else.
 											</h4>
 										</div>
 									</div>
@@ -369,10 +369,10 @@
 								<div class="display-table">
 									<div class="display-table-cell vertical-align-middle">
 										<div class="caption-container text-left">
-											<h2 style="color:gold!important">LOREM IPSUM <strong>DOLOR</strong></h2>
+											<h2 style="color:gold!important"><strong><a href="#" style="color:gold!important">Ambi Quail Eggs</a></strong></h2>
 											<h4 style="color:gold!important">
-												Unlimited designs, unlimited combinations <br />
-												imagination is the limit!
+												With Healthy fishes <br />
+												And large eggs.
 											</h4>
 										</div>
 									</div>
@@ -400,7 +400,7 @@
 								<li>
 									<a href="#">
 										<i class="fa fa-clock-o"></i>
-										<span class="font-lato">June 29, 2015</span>
+										<span class="font-lato">April 8, 2017</span>
 									</a>
 								</li>
 								<li>
@@ -411,13 +411,56 @@
 								</li>
 							</ul>
 
-							<p>The Central Bank of Nigeria (CBN) has approved the disbursement of about N75billion as loan to farmers in the 36 states and the Federal Capital Territory (FCT) under the African Access To Wealth Initiative.
-								The loan guarantee scheme is a public-private sector initiative set up to transform the country’s agricultural sector. It was initiated by the apex bank, the Bankers’ Committee and the Federal Ministry of Agriculture and Rural Development, to guarantee 75 per cent loans provided by Deposit Money Banks (DPB) to farmers as part of efforts to transform the country’s agricultural sector.
-								...</p>
+							<p>All Farmers Association of Nigeria (AFAN), Offers to it's registered members, through A2A Wealth Oppurtunity to access Anchor Borrowers Loan, At one Digit Unit Interest under The Afan,Plateau State Chapter - FCMB - Grand Cereals Private Sector Partnership Arrangement. ...</p>
 
 							<a href="blog-single-default.html" class="btn btn-reveal btn-default">
 								<i class="fa fa-plus"></i>
 								<span>Read More</span>
+							</a>
+
+							<a href="blog-single-default.html" class="btn btn-reveal btn-default">
+								<i class="fa fa-cub"></i>
+								<span>See All</span>
+							</a>
+
+						</div>
+					</div>
+					<div class="blog-post-item"><!-- .blog-post-item-inverse = image right side [left on RTL] -->
+
+						<!-- IMAGE -->
+						<figure class="blog-item-small-image margin-bottom-20">
+							<img class="img-responsive" src="assets2/images/organics.jpg" alt="">
+						</figure>
+
+						<div class="blog-item-small-content">
+
+							<h2><a href="blog-single-default.html">Organic Crop Production</a></h2>
+
+							<ul class="blog-post-info list-inline">
+								<li>
+									<a href="#">
+										<i class="fa fa-clock-o"></i>
+										<span class="font-lato">April 8, 2017</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-comment-o"></i>
+										<span class="font-lato">28 Comments</span>
+									</a>
+								</li>
+							</ul>
+
+							<p>A2A Wealth secures funding for black/white Sesame and sweet potato organic production for the 201 cropping season ...</p>
+
+							<a href="blog-single-default.html" class="btn btn-reveal btn-default">
+								<i class="fa fa-plus"></i>
+								<span>Read More</span>
+							</a>
+
+							<a href="blog-single-default.html" class="btn btn-reveal btn-default">
+								<i class="fa fa-cub"></i>
+								<span>See All</span>
 							</a>
 
 						</div>
@@ -433,8 +476,7 @@
 
 							<div class="col-sm-6">
 								<ul class="list-unstyled list-icons">
-									<li><i class="fa fa-check text-success"></i> No Qualification Or Degree Needed.</li>
-									<li><i class="fa fa-check text-success"></i> Must Be A bonafide member of the Organic Farmer's Contract Farming Scheme.</li>
+									<li><i class="fa fa-check text-success"></i>No Degree or Qualifications needed</li>
 									<li><i class="fa fa-check text-success"></i> Pay the Applicable Under-stated fees provided in the table below. <stromg>NB</stromg>: Non-Refundable  </li>
 								</ul>
 							</div>
@@ -700,8 +742,8 @@
 						<img class="img-responsive" src="assets2/images/Jute-Plant.jpg" alt="">
 					</a>
 
-					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
-					<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Depad Integrated Ventures</a></h4>
+					<p class="text-left">Known Well for their tall rich rooted plants. Located in Lamingo LGA of Plateau State.</p>
 					<ul class="text-left size-12 list-inline list-separator">
 						<li>
 							<i class="fa fa-calendar"></i>
@@ -720,8 +762,8 @@
 						<img class="img-responsive" src="assets2/images/white_turkeys.jpg" alt="">
 					</a>
 
-					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
-					<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Michael Poultry Farms</a></h4>
+					<p class="text-left">Located in Vom Area Of Plateau State. Known for their large Turky Poultry</p>
 					<ul class="text-left size-12 list-inline list-separator">
 						<li>
 							<i class="fa fa-calendar"></i>
@@ -740,8 +782,8 @@
 						<img class="img-responsive" src="assets2/images/Onions-Farming.jpg" alt="">
 					</a>
 
-					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
-					<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Nyambees Company Plc</a></h4>
+					<p class="text-left">Known not just for their maize production but also for their recent addition of onions to their production quota.</p>
 					<ul class="text-left size-12 list-inline list-separator">
 						<li>
 							<i class="fa fa-calendar"></i>
@@ -760,8 +802,8 @@
 						<img class="img-responsive" src="assets2/images/mushroom-farming.jpg" alt="">
 					</a>
 
-					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
-					<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Asixo Model Farm</a></h4>
+					<p class="text-left">A Beautiful farm located in Rukuba Area of Plateau State, Known mostly for their awesome Mushrooms of various kinds.</p>
 					<ul class="text-left size-12 list-inline list-separator">
 						<li>
 							<i class="fa fa-calendar"></i>
@@ -779,8 +821,8 @@
 					<a href="blog-single-default.html">
 						<img class="img-responsive" src="assets2/images/fishfarm-big-1728x800_c.jpg" alt="">
 					</a>
-					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
-					<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Ambi Quail Eggs</a></h4>
+					<p class="text-left">Locatedd in Bassa LGA, Plateau State. Jnown now for more than their eggs but also for their fish farm which is becoming well favoured in the area.</p>
 					<ul class="text-left size-12 list-inline list-separator">
 						<li>
 							<i class="fa fa-calendar"></i>
@@ -798,8 +840,8 @@
 					<a href="blog-single-default.html">
 						<img class="img-responsive" src="assets2/images/banner-bg.jpg" alt="">
 					</a>
-					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
-					<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">1st Digital Farms</a></h4>
+					<p class="text-left">Located in Shendam LGA located in Plateau State. Known for their High range of scented flowers, their GreenHouse.</p>
 					<ul class="text-left size-12 list-inline list-separator">
 						<li>
 							<i class="fa fa-calendar"></i>
@@ -817,8 +859,8 @@
 					<a href="blog-single-default.html">
 						<img class="img-responsive" src="assets2/images/Pineapple_Farming.jpg" alt="">
 					</a>
-					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
-					<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">K.I. Holdings Nigeria Limited</a></h4>
+					<p class="text-left">Located in Dadinkowa Area. Producers of Pinneaple, Carrots, Maize, amongst others.</p>
 					<ul class="text-left size-12 list-inline list-separator">
 						<li>
 							<i class="fa fa-calendar"></i>
@@ -836,12 +878,12 @@
 					<a href="blog-single-default.html">
 						<img class="img-responsive" src="assets2/images/maize.jpg" alt="">
 					</a>
-					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
-					<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+					<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Nyambees Company Plc</a></h4>
+					<p class="text-left">Located in Foron District of the barkin ladi LGA of Plateau State.</p>
 					<ul class="text-left size-12 list-inline list-separator">
 						<li>
 							<i class="fa fa-calendar"></i>
-							29th Jan 2015
+							29th Jan 2017
 						</li>
 						<li>
 							<a href="blog-single-default.html#comments">

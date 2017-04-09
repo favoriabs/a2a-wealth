@@ -46,20 +46,20 @@
     
         @if(session('currentUserRole') == 'superadmin')
 			<ul class="nav">
-                <li class="active">
+                <li class="@yield('superadmin_active')">
                     <a href="{{ route('superadmin_dash') }}">
                         <i class="pe-7s-browser"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
-                <li>
+                <li class="@yield('create_company_active')">
                     <a href="{{ route('create_company') }}">
                         <i class="pe-7s-id"></i>
                         <p>Create Company</p>
                     </a>
                 </li>
                 
-                <li>
+                <li class="@yield('create_agent_active')">
                     <a href="{{ route('create_agent') }}">
                         <i class="pe-7s-folder"></i>
                         <p>Create Agent</p>
@@ -69,16 +69,16 @@
             </ul>
 		@endif
 		
-		@if(session('currentUserRole') == 'cooperative_admin')
+		<!--@if(session('currentUserRole') == 'cooperative_admin')
 			<ul class="nav">
-                <li class="active">
+                <li class="@yield('dashboard_active')">
                     <a href="{{ route('cooperative_index') }}">
                         <i class="pe-7s-browser"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
     
-                <li>
+                <li class="@yield('create_active')">
                     <a href="{{ route('create_farmer') }}">
                         <i class="pe-7s-users"></i>
                         <p>Create Farmer</p>
@@ -86,18 +86,18 @@
                 </li>
                 
             </ul>
-		@endif
+		@endif-->
 		
 		@if(session('currentUserRole') == 'farmer')
 			<ul class="nav">
-			    <li>
+			    <li class="@yield('registration_active')">
                     <a href="{{ route('farmer_registration') }}">
                         <i class="pe-7s-notebook"></i>
                         <p>Farmer Registration</p>
                     </a>
                 </li>
                 
-                <li>
+                <li class="@yield('product_active')">
                     <a href="{{ route('create_product') }}">
                         <i class="pe-7s-graph"></i>
                         <p>Add Products</p>
@@ -108,14 +108,14 @@
 		
 		@if(session('currentUserRole') == 'company')
 			<ul class="nav">
-			    <li>
-                    <a href="{{ route('farmer_registration') }}">
+			    <li class="@yield('dashboard_active')">
+                    <a href="#">
                         <i class="pe-7s-notebook"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
                 
-                <li>
+                <li class="@yield('register_company_active')">
                     <a href="{{ route('register_company') }}">
                         <i class="pe-7s-graph"></i>
                         <p>Register Company</p>
@@ -133,7 +133,7 @@
                     </a>
                 </li>
                 
-                <li>
+                <li class="@yield('create_farmer_active')">
                     <a href="{{ route('create_farmer') }}">
                         <i class="pe-7s-graph"></i>
                         <p>Register Farmer</p>

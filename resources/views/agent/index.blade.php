@@ -4,6 +4,10 @@
     @include('admin.navbar')
 @stop
 
+@section('superadmin_active')
+    active
+@stop
+
 @section('stylesheets')
     <link href="/css/responsivemodal.css" rel="stylesheet" />
     <style media="screen">

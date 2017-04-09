@@ -4,8 +4,8 @@
     @include('company.navbar')
 @stop
 
-@section('script')
-
+@section('register_company_active')
+    active
 @stop
 
 @section('content')

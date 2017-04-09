@@ -4,6 +4,10 @@
     @include('agent.navbar')
 @stop
 
+@section('create_farmer_active')
+    active
+@stop
+
 @section('content')
     <div class="container-fluid">
         <div class="row">

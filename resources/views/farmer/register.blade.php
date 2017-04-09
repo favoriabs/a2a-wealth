@@ -4,6 +4,10 @@
     @include('farmer.navbar')
 @stop
 
+@section('registration_active')
+    active
+@stop
+
 @section('script')
 <script type="text/javascript">
    $(function() {
@@ -321,7 +325,16 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="control-label"> Fertilization </label> <br/>
+                                                <input type="radio" name="fertilization" value="organic">Organic <br/>
+                                                <input type="radio" name="fertilization" value="inorganic">Inorganic
+                                                <input type="radio" name="fertilization" value="both">Both
+                                            </div>
+                                        </div>
+                                    </div>
                                      
                                     <hr/>
                                     <div class="row">
