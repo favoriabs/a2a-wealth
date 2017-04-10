@@ -35,7 +35,7 @@ class EloquentSmsRepository implements SmsContract
     
     public function send($username, $recipients, $password) {
         $url = $json_url = "http://api.ebulksms.com:8080/sendsms.json";
-        $apikey = '804873a528943b8c700de128709bef251bdb3190';
+        $apikey = "804873a528943b8c700de128709bef251bdb3190";
         $flash=0;
         $sendername='A2A';
         $gsm = array();
@@ -61,7 +61,7 @@ class EloquentSmsRepository implements SmsContract
     
         $request = array('SMS' => array(
                 'auth' => array(
-                    'username' => $username,
+                    'username' => 'favoriabs@gmail.com',
                     'apikey' => $apikey
                 ),
                 'message' => $message,

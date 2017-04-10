@@ -38,6 +38,7 @@ class EloquentAgentRepository implements AgentContract
         
         //send sms
         // $sms = $this->smsRepo->sendSms($farmer, $password);
+        Log::info($farmer->user_name); Log::info($farmer->phone_number); 
         $sms = $this->smsRepo->send($farmer->user_name, $farmer->phone_number, $password);
 
         
