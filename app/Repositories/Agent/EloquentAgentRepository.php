@@ -1,6 +1,7 @@
 <?php
 namespace App\Repositories\Agent;
 use App\Repositories\Agent\AgentContract;
+use App\Repositories\Admin\AdminContract;
 use App\Repositories\Sms\SmsContract;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Illuminate\Support\Facades\Log;
@@ -11,14 +12,16 @@ use App\Farmer;
 class EloquentAgentRepository implements AgentContract
 {
 	protected $smsRepo;
-	public function __construct(SmsContract $smsContract){
+	protected $adminRepo;
+	
+	public function __construct(SmsContract $smsContract, AdminContract $adminContract){
 		$this->smsRepo = $smsContract;
+		$this->adminRepo = $adminContract;
 	}
 	public function create($request) {
 		
 		$user = Sentinel::getUser();
-		// dd($user);
-		$password = rand(10000, 99999);
+		$password = $this->adminRepo->generatePassword(10);
 		Log::info($password);
 	    $farmerDetails = [
             'first_name' => $request->first_name,

@@ -21,7 +21,7 @@ class EloquentAdminRepository implements AdminContract
 	
     public function create($request) {
         
-         $password = rand(10000, 99999);
+         $password = $this->generatePassword(10);
          Log::info($password);
         $cooperativeDetails = [
             'user_name' => $request->user_name,
@@ -48,7 +48,7 @@ class EloquentAdminRepository implements AdminContract
     }
     
     public function createAgent($request){
-        $password = rand(10000, 99999);
+        $password = $this->generatePassword(10);
          Log::info($password);
         $agentDetails = [
             'user_name' => $request->user_name,
@@ -70,7 +70,7 @@ class EloquentAdminRepository implements AdminContract
     }
     
     public function createCompany($request){
-        $password = rand(10000, 99999);
+        $password = $this->generatePassword(10);
          Log::info($password);
         $companyDetails = [
             'user_name' => $request->user_name,
@@ -160,6 +160,12 @@ class EloquentAdminRepository implements AdminContract
             array_push($agents, $users);
         }
         return $agents;
+    }
+    
+    public function generatePassword($length){
+        $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-=+;:,.?";
+        $password = substr( str_shuffle( $chars ), rand(0,70), $length );
+        return $password;
     }
 
 }
