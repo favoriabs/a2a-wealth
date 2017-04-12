@@ -90,6 +90,12 @@
 		
 		@if(session('currentUserRole') == 'farmer')
 			<ul class="nav">
+			    <li class="@yield('farmer_dashboard_active')">
+                    <a href="{{ route('farmer_dashboard') }}">
+                        <i class="pe-7s-browser"></i>
+                        <p>Farmer Dashboard</p>
+                    </a>
+                </li>
 			    <li class="@yield('registration_active')">
                     <a href="{{ route('farmer_registration') }}">
                         <i class="pe-7s-notebook"></i>

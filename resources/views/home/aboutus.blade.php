@@ -334,34 +334,30 @@
 						<h2>Who We Are?</h2>
 					</div>
 
-					<p>Lorem ipsum dolor sit amet tempus malesuada. Suspendisse in dui. Ut elit metus, quis consectetuer congue augue quis erat. Quisque pretium eu, aliquam odio. Donec a pellentesque consectetuer, augue nec odio. Nam accumsan at, porttitor sem at porttitor laoreet viverra mattis. Aliquam ultricies accumsan. In tempus. Pellentesque felis.</p>
-					<p>Aliquam nisl. Nunc condimentum wisi. Aenean nonummy risus at eros. Suspendisse congue odio at purus. Quisque eu justo. Quisque eu eros. Sed accumsan dictum, laoreet sit amet ante. Curabitur ultrices iaculis. In gravida eros in consequat diam. Donec nonummy, tellus in lorem lorem pretium magna. In hac habitasse platea dictumst. Suspendisse elit eu scelerisque a, gravida vel, purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Aenean dictum vitae, cursus sapien. Morbi accumsan imperdiet, lorem semper facilisis nisl neque vel tortor. Cum sociis natoque penatibus et ultrices volutpat. Donec viverra et, feugiat venenatis, nunc justo non nunc. Phasellus vitae ante. Donec sit amet lorem. Vestibulum tempus. Nullam sapien. Donec pede. Lorem ipsum dolor tellus, imperdiet wisi. Phasellus purus. Praesent dictum accumsan at, posuere.</p>
+					<p>A2A Wealth is an agricultural e-commerce business platform designed to become a market leader in online sales/distribution of farming and industrial inputd, products, facilities and services. A2A Wealth is to play a major role inn addressing the challenge of improper information and communication systems in the agricultural and industrial transactions, and also to increase efficiencey, productivity and sustainability of small and large scale business in Nigeria and beyond</p>
+					<p>The Business is Located in Jos, the capital of Plateau State.</p>
 
 
 					<div class="row margin-top-60">
 
 						<div class="col-sm-6">
 							<div class="heading-title heading-border-bottom heading-color">
+								<h3>Our Vision</h3>
+							<p>The future Starting Now</p>
+							</div>
+
+							<p>Create technology based solution for businesses in Africa to transact in order to accelerate growth in the agricultural, industrial, mining and tourism industries to enable increase in revenue generation, job creation, youth, women and venerable groups employment in the Nigerian economy as a tool to fight poverty, hunger and insecurity.</p>
+
+						</div>
+						<div class="col-sm-6">
+							<div class="heading-title heading-border-bottom heading-color">
 								<h3>Our Mission</h3>
 								<p>we always complete our missions</p>
 							</div>
 
-							<p>Aenean vel massa. Ut molestie elit, gravida non, feugiat ultrices posuere mattis id, congue sodales nulla id arcu. Suspendisse fringilla enim, id diam turpis in quam in metus. Integer est. Quisque eu dui sit amet ipsum dolor sit amet, orci.</p>
-							<p>Ut sodales auctor, ante ipsum dolor nibh, dignissim turpis. Duis quam elit eu libero. Cum sociis natoque penatibus et augue. Sed sit amet, ligula. Phasellus purus. Maecenas facilisis, ante ipsum at sapien. Proin porttitor egestas. Suspendisse fermentum eget, eros. Nullam consequat eu, pretium at, feugiat ultrices lorem eget nibh wisi, sed felis. Pellentesque ac quam ante ipsum primis in ligula eget ipsum dolor sit amet dolor.</p>
-
+							<p>To Provide a comprehensive agricultural and industrial e-commerce web platformthat will allow registered members to have access to relevant information regarding agricultural and industrial products, marketing and services that will sustain and increase productivity in the Nigerian Economy.</p>
 						</div>
-
-						<div class="col-sm-6">
-							<div class="heading-title heading-border-bottom heading-color">
-								<h3>8 Years Experience</h3>
-								<p>our experience is all you need</p>
-							</div>
-
-							<p>Aliquam tempus orci luctus laoreet. Aenean ligula non ipsum dolor sit amet, orci imperdiet sagittis, ipsum non nonummy consequat. Nulla augue justo nibh ac diam. Donec est. Maecenas diam aliquet mi augue, id enim.</p>
-							<p>Aenean ligula non imperdiet sagittis, ipsum non nonummy consequat. Nulla augue justo nibh ac diam. Donec est. Maecenas diam aliquet mi augue, id enim. Suspendisse potenti. Vestibulum vel nonummy sed, vehicula libero. In laoreet purus lacinia varius nunc, sed libero et odio. Aenean vel sollicitudin justo. Praesent a dolor massa imperdiet sagittis, nunc faucibus nibh. Maecenas vitae ipsum primis in dui.</p>
-
-						</div>
-
+						
 					</div>
 
 
@@ -369,39 +365,29 @@
 
 						<div class="heading-title heading-border-bottom heading-color text-center">
 							<h3>Why Choose Us?</h3>
-							<p>why smarty is different than any other template</p>
+							<p>why pick us over any other platform.</p>
 						</div>
-						<p>Sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla augue justo nibh ac diam.</p>
+						<p>Our model is based on the role of an applicaton service provider (asp) to our registered members. We render information tecnology services to our members upon payment, for these services which are made via one-time off activation and monthly subscription fees.</p>
 
 						<div class="row">
 
-							<div class="col-sm-4">
+							<div class="col-sm-6">
 								<ul class="list-unstyled list-icons">
-									<li><i class="fa fa-check text-success"></i> Nulla ipsum dolor lacus, suscipit.</li>
-									<li><i class="fa fa-check text-success"></i> Quisque lorem tortor fringilla sed.</li>
-									<li><i class="fa fa-check text-success"></i> Aenean ligula non imperdiet sagittis</li>
-									<li><i class="fa fa-check text-success"></i> Suspendisse a pellentesque dui.</li>
-									<li><i class="fa fa-check text-success"></i> Congue sodales nulla id arcu</li>
+									<li><i class="fa fa-check text-success"></i> Access to online market space upon registration, to display your products and offers in order to increase production and profit.</li>
+									<li><i class="fa fa-check text-success"></i> Access up to date market information on prices of organic commodities, inputs and consumer trends.</li>
+									<li><i class="fa fa-check text-success"></i> Access payment transaction for organic fertilizers, inputs and other commodities and services rendered.</li>
+									<li><i class="fa fa-check text-success"></i> Access tractor hiring services.</li>
+									<li><i class="fa fa-check text-success"></i> Access trainings, seminars and workshops on various farming methodologies</li>
 								</ul>
 							</div>
 
-							<div class="col-sm-4">
+							<div class="col-sm-6">
 								<ul class="list-unstyled list-icons">
-									<li><i class="fa fa-check text-success"></i> Nulla ipsum dolor lacus, suscipit.</li>
-									<li><i class="fa fa-check text-success"></i> Quisque lorem tortor fringilla sed.</li>
-									<li><i class="fa fa-check text-success"></i> Aenean ligula non imperdiet sagittis</li>
-									<li><i class="fa fa-check text-success"></i> Suspendisse a pellentesque dui.</li>
-									<li><i class="fa fa-check text-success"></i> Congue sodales nulla id arcu</li>
-								</ul>
-							</div>
-
-							<div class="col-sm-4">
-								<ul class="list-unstyled list-icons">
-									<li><i class="fa fa-check text-success"></i> Nulla ipsum dolor lacus, suscipit.</li>
-									<li><i class="fa fa-check text-success"></i> Quisque lorem tortor fringilla sed.</li>
-									<li><i class="fa fa-check text-success"></i> Aenean ligula non imperdiet sagittis</li>
-									<li><i class="fa fa-check text-success"></i> Suspendisse a pellentesque dui.</li>
-									<li><i class="fa fa-check text-success"></i> Congue sodales nulla id arcu</li>
+									<li><i class="fa fa-check text-success"></i> Create a central database of members which will help in tracking farmers and industry owners' performances, loan recovery, adequate & even distribution of agric loan grants, organic farm inputs and business support services.</li>
+									<li><i class="fa fa-check text-success"></i> Facilitation of agricultural loan facilities through <b>Our</b> platform.</li>
+									<li><i class="fa fa-check text-success"></i> Access farm lands for crop and non-crop production.</li>
+									<li><i class="fa fa-check text-success"></i> Facilitate access to grants.</li>
+									<li><i class="fa fa-check text-success"></i> Facilitate access to produce off-taking.</li>
 								</ul>
 							</div>
 
@@ -416,35 +402,18 @@
 				<div class="col-md-3">
 
 					<div class="box-static box-border-top margin-bottom-60">
-						<div class="box-title">
-							<h4>We can deal with</h4>
-						</div>
 						<ul class="list-unstyled list-icons padding-15 nopadding-bottom">
 							<li class="margin-bottom-20">
 								<i class="fa fa-check text-success size-18"></i>
-								<span class="block bold size-18">Surgery</span>
-								<small>lorem ipsum dolor sit amet</small>
+								<span class="block bold size-18">Motto</span>
+								<small>...Enhancing Life Through Bio-technology and E-commerce.</small>
 							</li>
 							<li class="margin-bottom-20">
 								<i class="fa fa-check text-success size-18"></i>
-								<span class="block bold size-18">Cardiology</span>
-								<small>lorem ipsum dolor sit amet</small>
-							</li>
-							<li class="margin-bottom-20">
-								<i class="fa fa-check text-success size-18"></i>
-								<span class="block bold size-18">Internal Medicine</span>
-								<small>lorem ipsum dolor sit amet</small>
-							</li>
-							<li class="margin-bottom-20">
-								<i class="fa fa-check text-success size-18"></i>
-								<span class="block bold size-18">Rehabilitation</span>
-								<small>lorem ipsum dolor sit amet</small>
+								<span class="block bold size-18">Slogan</span>
+								<small>Poverty is A choice.</small>
 							</li>
 						</ul>
-
-						<hr />
-
-						<p class="text-center size-11 margin-bottom-10">Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis.</p>
 					</div>
 
 					<!-- FACEBOOK -->
@@ -512,8 +481,8 @@
 							<h4 class="letter-spacing-1">RECENT NEWS</h4>
 							<ul class="list-unstyled footer-list half-paddings">
 								<li>
-									<a class="block" href="#">CBN approves N75billion loan for agricultural lending to A2AW members</a>
-									<small>June 29, 2015</small>
+									<a class="block" href="#">FCMB Offers 2.1 Billion Naira Only To AFAN Plateau State</a>
+									<small>Jan 29, 2017</small>
 								</li>
 							</ul>
 						</div>

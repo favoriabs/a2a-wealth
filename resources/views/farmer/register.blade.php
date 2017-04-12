@@ -270,6 +270,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
+                                            <label class="control-label"> Farmer Category </label>
                                             <select class="form-control" name="farmer_category" v-model="selected">
                                                 <option disabled value="">Please select one</option>
                                                 <option value="producer">Producer</option>
@@ -329,7 +330,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="control-label"> Fertilization </label> <br/>
-                                                <input type="radio" name="fertilization" value="organic">Organic <br/>
+                                                <input type="radio" name="fertilization" value="organic">Organic 
                                                 <input type="radio" name="fertilization" value="inorganic">Inorganic
                                                 <input type="radio" name="fertilization" value="both">Both
                                             </div>
@@ -524,7 +525,7 @@
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label class="control-label"> Date of Registration of in Cooperative</label>
+                                        <label class="control-label"> Date of Registration in Cooperative</label>
                                         <input type="date" name="cooperative_reg_date" class="form-control" value="{{old('cooperative_reg_date')}}"/>
                                     </div>
                                 </div>

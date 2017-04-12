@@ -84,6 +84,7 @@ class EloquentFarmerRepository implements FarmerContract
 	    $farmer->contact_person = $request->contact_person;
 	    $farmer->contact_number = $request->contact_number;
 	    $farmer->cooperative_address = $request->cooperative_address;
+	    $farmer->fertilization = $request->fertilization;
 	    
 		//webcam
 	    /*$binary_data = base64_decode($request->farmer_pix);

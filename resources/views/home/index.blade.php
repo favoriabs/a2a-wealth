@@ -389,12 +389,12 @@
 
 						<!-- IMAGE -->
 						<figure class="blog-item-small-image margin-bottom-20">
-							<img class="img-responsive" src="assets2/images/CBN.png" alt="">
+							<img class="img-responsive" src="assets2/images/fcmb.jpg" alt="">
 						</figure>
 
 						<div class="blog-item-small-content">
 
-							<h2><a href="#">CBN Offers 2.1 Billion Naira Only To AFAN Plateau State</a></h2>
+							<h2><a href="#">FCMB Offers 2.1 Billion Naira Only To AFAN Plateau State</a></h2>
 
 							<ul class="blog-post-info list-inline">
 								<li>
@@ -926,8 +926,8 @@
 							<h4 class="letter-spacing-1">RECENT NEWS</h4>
 							<ul class="list-unstyled footer-list half-paddings">
 								<li>
-									<a class="block" href="#">CBN approves N75billion loan for agricultural lending to A2AW members</a>
-									<small>June 29, 2015</small>
+									<a class="block" href="#">FCMB Offers 2.1 Billion Naira Only To AFAN Plateau State</a>
+									<small>Jan 29, 2017</small>
 								</li>
 							</ul>
 						</div>

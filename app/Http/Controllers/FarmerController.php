@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Repositories\Farmer\FarmerContract;
+use Sentinel;
 use DB;
 class FarmerController extends Controller
 {
@@ -16,7 +17,15 @@ class FarmerController extends Controller
 	     */
 	    public function index()
 	    {
-	        return view('farmer.index');
+	    	$user = Sentinel::getUser();
+	    	$farmers = $this->repo->findAll();
+	    	$lgas = DB::table('lgas')->get();
+	    	$states = DB::table('states')->get();
+	    	// $a = null;
+	    	// foreach($farmers as $farmer){
+	    	// 	$a = $farmer->where('farmer->user_id', $user->id)->first();
+	    	// }
+	        return view('farmer.index')->with('user', $user)->with('farmers', $farmers)->with('lgas', $lgas)->with('states', $states);
 	    }
 	    /**
 	     * Show the form for creating a new resource.
