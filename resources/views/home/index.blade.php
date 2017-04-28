@@ -429,18 +429,18 @@
 
 						<!-- IMAGE -->
 						<figure class="blog-item-small-image margin-bottom-20">
-							<img class="img-responsive" src="assets2/images/organics.jpg" alt="">
+							<img class="img-responsive" src="assets/img/pressconf.jpg" alt="AFAN Press Conference">
 						</figure>
 
 						<div class="blog-item-small-content">
 
-							<h2><a href="#">Organic Crop Production</a></h2>
+							<h2><a href="#">AFAN Press Conference</a></h2>
 
 							<ul class="blog-post-info list-inline">
 								<li>
 									<a href="#">
 										<i class="fa fa-clock-o"></i>
-										<span class="font-lato">April 8, 2017</span>
+										<span class="font-lato">April 21, 2017</span>
 									</a>
 								</li>
 								<li>
@@ -451,7 +451,48 @@
 								</li>
 							</ul>
 
-							<p>A2A Wealth secures funding for black/white Sesame and sweet potato organic production for the 201 cropping season ...</p>
+							<p>AFAN Press Conference which bothered on how far the association has come and the way forward.</p>
+
+							<a href="#" class="btn btn-reveal btn-default">
+								<i class="fa fa-plus"></i>
+								<span>Read More</span>
+							</a>
+
+							<a href="#" class="btn btn-reveal btn-default">
+								<i class="fa fa-cub"></i>
+								<span>See All</span>
+							</a>
+
+						</div>
+					</div>
+					
+					<div class="blog-post-item"><!-- .blog-post-item-inverse = image right side [left on RTL] -->
+
+						<!-- IMAGE -->
+						<figure class="blog-item-small-image margin-bottom-20">
+							<img class="img-responsive" src="assets/img/inspect.jpg" alt="AFAN Press Conference">
+						</figure>
+
+						<div class="blog-item-small-content">
+
+							<h2><a href="#">Rice Inspection in Kaduna</a></h2>
+
+							<ul class="blog-post-info list-inline">
+								<li>
+									<a href="#">
+										<i class="fa fa-clock-o"></i>
+										<span class="font-lato">April 21, 2017</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-comment-o"></i>
+										<span class="font-lato">28 Comments</span>
+									</a>
+								</li>
+							</ul>
+
+							<p>AFAN Delegates inspecting a Rice manufacturing plant in Kaduna.</p>
 
 							<a href="#" class="btn btn-reveal btn-default">
 								<i class="fa fa-plus"></i>
