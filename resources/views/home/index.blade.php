@@ -475,7 +475,7 @@
 
 						<div class="blog-item-small-content">
 
-							<h2><a href="#">Rice Inspection in Kaduna</a></h2>
+							<h2><a href="#">Fertilizer Inspection in Kaduna</a></h2>
 
 							<ul class="blog-post-info list-inline">
 								<li>

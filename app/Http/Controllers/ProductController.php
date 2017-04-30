@@ -26,6 +26,7 @@ class ProductController extends Controller
             'price' => 'required|numeric',
             'fertilization' => 'required',
             'production' => 'required',
+            'product_pix_path' => 'size|1024'
         ]);
         $product = $this->repo->create($request);
 				if ($product->id) {
