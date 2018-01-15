@@ -21,10 +21,7 @@ class FarmerController extends Controller
 	    	$farmers = $this->repo->findAll();
 	    	$lgas = DB::table('lgas')->get();
 	    	$states = DB::table('states')->get();
-	    	// $a = null;
-	    	// foreach($farmers as $farmer){
-	    	// 	$a = $farmer->where('farmer->user_id', $user->id)->first();
-	    	// }
+
 	        return view('farmer.index')->with('user', $user)->with('farmers', $farmers)->with('lgas', $lgas)->with('states', $states);
 	    }
 	    /**

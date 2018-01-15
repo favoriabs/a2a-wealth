@@ -12,6 +12,7 @@ return array(
     'CreateFarmersTable' => $baseDir . '/database/migrations/2017_02_21_102338_create_farmers_table.php',
     'CreateLgasTable' => $baseDir . '/database/migrations/2017_02_20_125040_create_lgas_table.php',
     'CreateLoansTable' => $baseDir . '/database/migrations/2017_03_05_071648_create_loans_table.php',
+    'CreateNewsTable' => $baseDir . '/database/migrations/2017_05_03_100534_create_news_table.php',
     'CreateProductsTable' => $baseDir . '/database/migrations/2017_02_21_105229_create_products_table.php',
     'CreateSmsTable' => $baseDir . '/database/migrations/2017_02_23_021613_create_sms_table.php',
     'CreateStatesTable' => $baseDir . '/database/migrations/2017_02_20_125023_create_states_table.php',

@@ -18,6 +18,9 @@
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/products', 'HomeController@getProducts')->name('get_products');
 Route::get('/about-us', 'HomeController@getAboutUs')->name('get_aboutus');
+Route::get('/news-updates', 'HomeController@getNewsUpdate')->name('news_update');
+Route::get('/more/news/{id}', 'NewsController@moreNews')->name('more_news');
+
 
 Route::get('login', 'AuthController@getLogin')->name('login');
 Route::post('login', 'AuthController@postLogin')->name('do_login');
@@ -45,6 +48,13 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web']], function () {
     
     //farmers
     Route::get('all/farmers', 'AdminController@allFarmers')->name('all_farmers');
+    
+    //news
+    Route::get('create/news', 'NewsController@create')->name('create_news');
+    Route::post('create/news', 'NewsController@store')->name('save_news');
+    Route::post('edit/news/{id}', 'NewsController@edit')->name('update_news');
+    Route::get('delete/news/{id}', 'NewsController@discard')->name('delete_news');
+    Route::get('all/news', 'NewsController@index')->name('all_news');
 });
 
 Route::post('ajax/state/lgas', 'AdminController@ajaxCall')->name('state_lga');
@@ -85,7 +95,5 @@ Route::group(['prefix' => 'products'], function(){
    Route::get('create', 'ProductController@create')->name('create_product');
    Route::post('create', 'ProductController@store')->name('store_product');
 });
-
-// Route::get('/password', 'CooperativeController@';
 
 

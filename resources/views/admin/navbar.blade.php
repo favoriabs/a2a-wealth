@@ -38,6 +38,15 @@
 				</li>
 		
 			</ul>
+			<ul class="nav navbar-nav navbar-left">
+				<li>
+					<a href="{{route('all_news')}}">
+						<i class="pe-7s-plus"></i>
+						<p>All News</p>
+					</a>
+				</li>
+		
+			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown dropdown-with-icons">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">

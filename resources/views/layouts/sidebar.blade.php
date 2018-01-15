@@ -65,6 +65,13 @@
                         <p>Create Agent</p>
                     </a>
                 </li>
+                
+                 <li class="@yield('create_news')">
+                    <a href="{{ route('create_news') }}">
+                        <i class="pe-7s-news-paper"></i>
+                        <p>Create News</p>
+                    </a>
+                </li>
 
             </ul>
 		@endif
