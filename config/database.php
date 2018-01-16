@@ -1,11 +1,11 @@
 <?php
 
-    // $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
     
-    // $host = $url["host"];
-    // $username = $url["user"]; 
-    // $password = $url["pass"];
-    // $database = substr($url["path"], 1);
+    $host = $url["host"];
+    $username = $url["user"]; 
+    $password = $url["pass"];
+    $database = substr($url["path"], 1);
     
 return [
 
@@ -59,33 +59,33 @@ return [
             'prefix' => '',
         ],
 
-        'mysql' => [
-            'driver' => 'mysql',
-            'host' => env('DB_HOST', 'localhost'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'a2awealth'),
-            'username' => env('DB_USERNAME', 'a2awealth'),
-            'password' => env('DB_PASSWORD', 'a2awealth'),
-            'charset' => 'utf8',
-            'collation' => 'utf8_unicode_ci',
-            'prefix' => '',
-            'strict' => true,
-            'engine' => null,
-        ],
-        
-        // 'mysql-heroku' => [
+        // 'mysql' => [
         //     'driver' => 'mysql',
-        //     'host' => env('DB_HOST', $host),
+        //     'host' => env('DB_HOST', 'localhost'),
         //     'port' => env('DB_PORT', '3306'),
-        //     'database' => env('DB_DATABASE', $database),
-        //     'username' => env('DB_USERNAME', $username),
-        //     'password' => env('DB_PASSWORD', $password),
+        //     'database' => env('DB_DATABASE', 'a2awealth'),
+        //     'username' => env('DB_USERNAME', 'a2awealth'),
+        //     'password' => env('DB_PASSWORD', 'a2awealth'),
         //     'charset' => 'utf8',
         //     'collation' => 'utf8_unicode_ci',
         //     'prefix' => '',
         //     'strict' => true,
         //     'engine' => null,
         // ],
+        
+        'mysql-heroku' => [
+            'driver' => 'mysql',
+            'host' => env('DB_HOST', $host),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', $database),
+            'username' => env('DB_USERNAME', $username),
+            'password' => env('DB_PASSWORD', $password),
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
 
         'pgsql' => [
             'driver' => 'pgsql',
