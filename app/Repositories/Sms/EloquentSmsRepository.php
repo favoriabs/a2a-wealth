@@ -8,31 +8,6 @@ use infobip\api\model\sms\mt\send\textual\SMSTextualRequest;
 
 class EloquentSmsRepository implements SmsContract
 {
-	public function sendSms($person, $password){
-	    define('USERNAME', 'nanipaul68@gmail.com');
-        define('PASSWORD', 'p@55w0rd');
-        
-	    $client = new SendSingleTextualSms(new BasicAuthConfiguration(USERNAME, PASSWORD));
-        $requestBody = new SMSTextualRequest();
-        
-        $from = "A2A";
-        $to = $person->phone_number;
-        $requestBody->setFrom($from);
-        $requestBody->setTo($to);
-        $requestBody->setText("Hi, your username and password is ". $person->user_name." and ". $password. " respectively ");  
-        
-        try {
-            $response = $client->execute($requestBody);
-            $sentMessageInfo = $response->getMessages()[0];
-            echo "Message ID: " . $sentMessageInfo->getMessageId() . "\n";
-            echo "Receiver: " . $sentMessageInfo->getTo() . "\n";
-            echo "Message status: " . $sentMessageInfo->getStatus()->getName();
-        } catch (Exception $exception) {
-            echo "HTTP status code: " . $exception->getCode() . "\n";
-            echo "Error message: " . $exception->getMessage();
-        }
-    }
-    
     public function send($username, $recipients, $password) {
         $url = $json_url = "http://api.ebulksms.com:8080/sendsms.json";
         $apikey = "607af6c4fcb16274c3fcd0e51906b591f7d10a64";
