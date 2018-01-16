@@ -9,8 +9,8 @@ use infobip\api\model\sms\mt\send\textual\SMSTextualRequest;
 class EloquentSmsRepository implements SmsContract
 {
 	public function sendSms($person, $password){
-	    define('USERNAME', 'OlotuTech');
-        define('PASSWORD', 'Brucelucas1!');
+	    define('USERNAME', 'nanipaul68@gmail.com');
+        define('PASSWORD', 'p@55w0rd');
         
 	    $client = new SendSingleTextualSms(new BasicAuthConfiguration(USERNAME, PASSWORD));
         $requestBody = new SMSTextualRequest();
@@ -35,7 +35,7 @@ class EloquentSmsRepository implements SmsContract
     
     public function send($username, $recipients, $password) {
         $url = $json_url = "http://api.ebulksms.com:8080/sendsms.json";
-        $apikey = "804873a528943b8c700de128709bef251bdb3190";
+        $apikey = "607af6c4fcb16274c3fcd0e51906b591f7d10a64";
         $flash=0;
         $sendername='A2A';
         $gsm = array();
@@ -61,7 +61,7 @@ class EloquentSmsRepository implements SmsContract
     
         $request = array('SMS' => array(
                 'auth' => array(
-                    'username' => 'favoriabs@gmail.com',
+                    'username' => 'nanipaul68@gmail.com',
                     'apikey' => $apikey
                 ),
                 'message' => $message,

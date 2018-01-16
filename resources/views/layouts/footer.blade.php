@@ -29,7 +29,7 @@
             <?php 
                 $copyYear = 2017; 
                 $curYear = date('Y'); 
-                echo $copyYear . (($copyYear != $curYear) ? '-' . $curYear : '');
+                echo $copyYear . (($copyYear != $curYear) ? ' - ' . $curYear : '');
             ?>
             <a href="http://nhubnigeria.com">nHub Nigeria.</a>
         </p>
